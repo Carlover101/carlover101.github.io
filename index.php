@@ -1,3 +1,9 @@
+<?php
+  if(!isset($_SERVER['POST']['redirected'])){
+    header('Location:www.example.com');
+    die();
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
