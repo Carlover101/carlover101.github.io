@@ -1,48 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="shortcut icon" type="image/ico" href="/Letter C.ico"/>
-<title>carlover101.github.io</title>
-<style>
-  .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  .button {
-   background-color: gray;
-   color: black;
-   border-color: black;
-   text-decoration: none;
-   padding: 4px 8px 4px 8px;
-   border: 1px;
-  }
-</style>
-</head>
-<body>
-<div class="topnav">
-  <a href="/">Home</a>
-  <a href="/emulators">Emulators</a>
-  <a class="active" href="#games">Games</a>
-  <a href="/other">Other</a>
-  <a href="/discord">Discord</a>
-</div>
-<iframe src="https://chromedino.com/" frameborder="0" scrolling="no" width="250%" height="250%"></iframe>
-<style type="text/css">iframe { position: absolute; width: 100%; height: 100%; z-index: 999; }</style>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" type="image/ico" href="/Letter C.ico"/>
+      <title>carlover101.github.io</title>
+    <style>
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      .button {
+       background-color: gray;
+       color: black;
+       border-color: black;
+       text-decoration: none;
+       padding: 4px 8px 4px 8px;
+       border: 1px;
+      }
+   </style>
+   </head>
+   <body>
+      <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/emulators">Emulators</a>
+        <a class="active" href="#games">Games</a>
+        <a href="/other">Other</a>
+        <a href="/discord">Discord</a>
+      </div>
+      <div id="game" class="game">
+         <div id="score" class="score">0</div>
+         <div id="start-message" class="start-message">Press any key to start</div>
+         <img src="assets/ground.png" class="ground">
+         <img src="assets/ground.png" class="ground">
+         <img src="assets/dino-stationary.png" id="dino" class="dino">
+         <div id="gameover-message" class="gameover-message hide">
+            <p>Game over</p>
+            <span>Press any key to restart</span>
+         </div>
+      </div>
+      <script src="/script.js"></script>
+   </body>
 </html>
